@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "simple js app",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "babel src --out-dir build"
+  },
   "author": "joydip",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.25.9",
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0"
+  },
+  "dependencies": {
+    "transpilation-demo": "file:"
   }
 }
