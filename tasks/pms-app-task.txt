@@ -3,9 +3,14 @@
 ProductManager
 -----------------------
 getAll() => returns all products from the array
+
 get(id) => returns a product matching to that id
+
 add(p) => adds a new product in the array
+	note: no duplicate record should be added
+
 update(id,p) => updates an existing product in the array
+
 delete(id) => delets an existing product in the array
 
 3. invoke the methods 
