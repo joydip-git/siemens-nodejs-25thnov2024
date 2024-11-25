@@ -1,3 +1,23 @@
 git repo: https://github.com/joydip-git/siemens-nodejs-25thnov2024
 
-Node JS:
+JavaScript engine:
+	1. chrome => V8 (open source)
+	2. safari => JSCore (Indigo)
+	3. Firefox => Spidermonkey
+
+Ryan Dahl (2009)
+Node JS: 
+	a JS runtime which is built at the top of V8 engine
+	a server side JS framework
+	file interaction, web app => web page app, web api (RESTful) etc.
+	IoT
+	command line tools
+	compilers
+	database
+
+express js, next js, nest js etc.
+
+
+
+
+
