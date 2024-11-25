@@ -10,3 +10,5 @@ delete(id) => delets an existing product in the array
 
 3. invoke the methods 
 4. create a class to represent your model sample data
+
+Note: use babel to transpile the code into vanilla js
