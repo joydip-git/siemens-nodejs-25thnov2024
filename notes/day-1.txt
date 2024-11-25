@@ -86,6 +86,7 @@ Babel:
 npm install --save-dev/-D @babel/core @babel/cli
 npm install --save-dev/-D @babel/preset-env
 
+create babel configuration file (.babelrc)
 command to run babel: .\node_modules\.bin\babel src --out-dir build
 
 

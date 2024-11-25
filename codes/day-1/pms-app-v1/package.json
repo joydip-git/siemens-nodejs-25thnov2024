@@ -1,9 +1,9 @@
 {
-  "name": "js-node-app",
+  "name": "pms-app-v1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "babel ./index.js --out-dir build"
+    "start": "babel src --out-dir build"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +13,5 @@
     "@babel/cli": "^7.25.9",
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0"
-  },
-  "dependencies": {
-    "js-node-app": "file:"
   }
 }
