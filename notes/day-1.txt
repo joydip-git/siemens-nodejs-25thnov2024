@@ -15,7 +15,80 @@ Node JS:
 	compilers
 	database
 
+other Js frameworks built at the top of the Node JS =>
 express js, next js, nest js etc.
+
+JavaScript:
+------------------------------
+data types => string , boolean, number, object, function
+keywords 	=> undefined, null, NaN, Infinity, var
+
+operators:
+	==, !=
+
+	strict equality 		=> ===, 
+	strict inequality 	=> !==
+
+	if(a===b)
+
+control flow statements => 
+
+
+JS execution cycle:
+--------------------------------
+whenever a function in JS is called, an object is created, known as: Function Execution Context Object (FEC)
+
+1. preparation stage
+	all declarations (variable and function) are registered in the "variable object" of the called function (which is referred from context) => hoisting
+	note: function "expressions" are not hoisted with the reference to the function, ONLY the variable in the expression gets hoisted.
+	hence the functions written using declaration syntax can be called even before the declaration, whereas functions written using expression syntax can't be called before the expression
+
+2. execution stage
+	all the method call, assignment etc. are taken care
+
+
+ECMA => ECMAScript (ES) 
+ES 2015/6.0
+	=> let and const keywords
+....
+
+transpilation:
+other scripting language with ES6+ syntax 	=> vanilla JS
+JS language code with ES6+ syntaxes 			=> vanilla JS
+
+JS => JS (babel)
+TS => JS (tsc => typescript compiler)
+
+application version, dependency and other metadata => package.json file
+command to create => 
+	> npm init
+	> npm init --yes
+
+
+package installation:
+local:> npm i <package-name>@version [-D/--save-dev or --save]
+
+		>npm i <package-name>@latest -D (development dependency)
+		or
+		>npm i <package-name>@latest --save-dev (development dependency)
+
+		>npm i <package-name>@latest (complete dependency)
+		or
+		>npm i <package-name>@latest --save (complete dependency)
+local packages get installed in your applicayion inside "node_modules" folder
+
+
+global:>npm i <package-name>@version --location=global (--global)
+global packages get installed here => C:\Users\<user-name>\AppData\Roaming\npm
+
+Babel:
+--------------------
+npm install --save-dev/-D @babel/core @babel/cli
+npm install --save-dev/-D @babel/preset-env
+
+command to run babel: .\node_modules\.bin\babel src --out-dir build
+
+
 
 
 
