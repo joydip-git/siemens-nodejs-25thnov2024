@@ -55,8 +55,9 @@ day-2:
 	f. object destructuring
 	g. ES6 modules
 
-8. modules in JS
+8. modules in JS and Node JS
 	a. module is an API to expose one file's members to outside
+		sharing code
 
 	b. module format:
 		i. common js format [default module format for Node JS]
@@ -78,6 +79,8 @@ module tansformer plugin of babel:
 >npm install --save-dev @babel/plugin-transform-modules-commonjs
 
 .babelrc => { "plugins":["@babel/plugin-transform-modules-commonjs"]}
+
+
 
 
 
