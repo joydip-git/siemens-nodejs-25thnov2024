@@ -1,0 +1,23 @@
+{
+  "name": "pms-app-v1",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "babel src --out-dir build -w",
+    "start": "node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.25.9",
+    "@babel/preset-env": "^7.26.0"
+  },
+  "dependencies": {
+    "pms-app-v1": "file:"
+  },
+  "type": "commonjs"
+}

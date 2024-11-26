@@ -1,4 +1,4 @@
-[
+export const products = [
     {
         "productId": 1,
         "productName": "Leaf Rake",
