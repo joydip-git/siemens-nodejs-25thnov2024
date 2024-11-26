@@ -1,0 +1,86 @@
+Revision:
+------------------------------
+1. JS Basics
+	a. data types
+	b. operators
+	c. control flow statements
+
+2. JS functions
+	a. declaration
+	b. expression
+
+3. JS objects
+	a. object-literal syntax
+	b. constructor function syntax
+	c. class syntax
+		i. class and constructor keywords
+	d. inheritance
+		i. extends and super keywords
+	e. private members and getter and setters
+	f. accessing object members
+		i. dot operator
+		ii. indexer
+	g. expanding the objects by adding additional properties
+	h. iterating through object using for...in loop
+
+4. JS code execution
+	a. preparation stage and execution stage
+	b. function execution context object
+	c. "varobject" property to store all the local variables declared using var, let and const keyword
+	d. "this" property to store reference of an object to store "this" (object) data
+	e: "scope" property to store copy of local variables of all outer scopes
+
+5. JS features
+	a. hoisting
+	b. closure-maintaining the state of the lexical environment of a function (all its outer scopes)
+	c. context binding to "this" object
+	d. apply, call and bind method
+	e. arrow function to bind the context to a particular "this" object
+	f. prototype and inheritance through prototype and prototype chain
+	g. Object.setprototypof() to change the prototype of an object
+	
+6. JS array
+	a. array basic methods - push, splice, slice, shift, unshift etc.
+	b. array methods which accepts callback - filter, sort, map, find, findIndex etc.
+
+7. JS new features
+	a. let and const keywords
+	b. class, constructor, super and extends keywords
+	c. arrow function
+	d. templated string
+
+day-2:
+---------------------
+	e. spread and rest operator
+	f. object destructuring
+	g. ES6 modules
+
+8. modules in JS
+	a. module is an API to expose one file's members to outside
+
+	b. module format:
+		i. common js format [default module format for Node JS]
+			export: module.exports = {prop1:member1,....}
+			import: const {prop1} = require('path of the module')
+		ii. Asynchronous Module Definition (AMD) format
+		iii. Universal Module Definition (UMD) format
+		iv. IIFE (Immediately Invocable Function Expression - iify)
+		v. ES6 module format:
+			export: export member name
+			import: import {} from 'path' 
+
+	c. module loader: s/w which understands the module format and resolves dependencies amongst the files (Node JS a default module loader which understands common js format)
+		i. require js module loader
+		ii. system js module loader
+		ii. common js module loader
+
+
+
+
+
+
+
+
+
+
+
