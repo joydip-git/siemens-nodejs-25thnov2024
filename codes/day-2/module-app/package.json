@@ -1,9 +1,10 @@
 {
-  "name": "new-features-app",
+  "name": "module-app",
   "version": "1.0.0",
-  "main": "amd-format.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir dist --watch",
+    "start": "node ./dist/app.js "
   },
   "keywords": [],
   "author": "",
@@ -12,11 +13,7 @@
   "devDependencies": {
     "@babel/cli": "^7.25.9",
     "@babel/core": "^7.26.0",
-    "@babel/plugin-transform-modules-amd": "^7.25.9",
     "@babel/plugin-transform-modules-commonjs": "^7.25.9",
     "@babel/preset-env": "^7.26.0"
-  },
-  "dependencies": {
-    "new-features-app": "file:"
   }
 }

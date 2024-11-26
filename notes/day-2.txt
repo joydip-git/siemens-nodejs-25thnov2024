@@ -74,6 +74,11 @@ day-2:
 		ii. system js module loader
 		ii. common js module loader
 
+module tansformer plugin of babel:
+>npm install --save-dev @babel/plugin-transform-modules-commonjs
+
+.babelrc => { "plugins":["@babel/plugin-transform-modules-commonjs"]}
+
 
 
 
