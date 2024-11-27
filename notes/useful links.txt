@@ -15,6 +15,9 @@ youtube: https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxa
 Node JS event loop:
 https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810
 
+Threads in Node JS:
+https://www.digitalocean.com/community/tutorials/how-to-use-multithreading-in-node-js
+
 JavaScript Execution Cycle:
 ---------------------------------------
 https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/

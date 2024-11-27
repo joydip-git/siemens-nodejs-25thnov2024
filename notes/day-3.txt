@@ -24,7 +24,7 @@ whenever there is any task has to be executed asynchronously "libuv" checks the 
 node js libuv uses polling mechanism, to check whther the operation is over or not. if the operation is over, then corresponding callback is pused into a queue which at some point is pushed into main thread by event-loop. (Network operation)
 examples: "epoll" for linux, "Kqueue" for Mac and "IO Completion port" for windows
 
-2. if the operation can't be off-loaded to O/S kernel (because it is not that tupe of operation), then libuv uses threads from its pool 4 threads to execute it (any CPU-bound operation - I/O operation). libuv uses polling mechanism, to check whther the operation is over or not. if the operation is over, then corresponding callback is pused into a queue which at some point is pushed into main thread by event-loop.
+2. if the operation can't be off-loaded to O/S kernel (because it is not that tupe of operation), then libuv uses threads from its pool of 4 threads to execute it (any CPU-bound operation - I/O operation). libuv uses polling mechanism, to check whther the operation is over or not. if the operation is over, then corresponding callback is pused into a queue which at some point is pushed into main thread by event-loop.
 
 
 Event Loop:
