@@ -1,0 +1,19 @@
+Node JS and VS Code:
+----------------------------------
+Node JS source code:	https://github.com/nodejs/node
+V8 docs page link: 	https://v8.dev/docs
+V8 source code link: 	https://github.com/v8/v8
+
+JavaScript:
+-----------------------------
+Mozilla Developer Network:https://developer.mozilla.org/en-US/docs/Web/JavaScript
+JavaScript tutorial	  https://javascript.info/
+
+Node JS tutorial: 
+youtube: https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY
+
+JavaScript Execution Cycle:
+---------------------------------------
+https://medium.com/@happymishra66/execution-context-in-javascript-319dd72e8e2c#:~:text=Execution%20context%20(EC)%20is%20defined,to%20at%20a%20particular%20time.
+
+https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/
