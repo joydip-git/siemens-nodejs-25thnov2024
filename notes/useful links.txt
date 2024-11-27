@@ -12,6 +12,9 @@ JavaScript tutorial	  https://javascript.info/
 Node JS tutorial: 
 youtube: https://www.youtube.com/playlist?list=PLC3y8-rFHvwh8shCMHFA5kWxD9PaPwxaY
 
+Node JS event loop:
+https://blog.insiderattack.net/event-loop-and-the-big-picture-nodejs-event-loop-part-1-1cb67a182810
+
 JavaScript Execution Cycle:
 ---------------------------------------
 https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/
