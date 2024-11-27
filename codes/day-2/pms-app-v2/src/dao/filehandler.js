@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFile, readFileSync, writeFileSync } from "node:fs";
 
 export const writeData = (data) => {
     try {
