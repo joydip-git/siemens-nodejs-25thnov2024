@@ -1,0 +1,19 @@
+JS code compilation:
+Node.js does not compile JavaScript to C or C++. Instead, it uses the V8 JavaScript engine, which directly compiles JavaScript code into native machine code. Here's how the process works:
+
+1.Parsing: When you run JavaScript code in Node.js, the V8 engine first parses the JavaScript source code into an Abstract Syntax Tree (AST).
+
+2. Compilation: V8 then compiles the AST into bytecode. This bytecode is not C or C++ but a lower-level representation that V8 can execute more efficiently.
+
+3. Execution: The V8 engine executes this bytecode. If the code is executed frequently, V8 may optimize it further by compiling it to native machine code using just-in-time (JIT) compilation.
+
+In summary, Node.js relies on the V8 engine to compile JavaScript into bytecode and execute it, rather than compiling to C or C++.
+
+Asynchronity in Node JS:
+-------------------------------------
+all asynchornous operations are offloaded from the main thread and handed over to "libuv", which has a poll of 4 threads
+libuv checks the type of oprtaion
+1. if the operation can be off-loaded to O/S kernel (which provides some asynchronous facilities - native async facility), then that is given to kernel
+node js libuv uses polling mechanism, to check whther the operation is over or not. if the operation is over, then corresponding callback is pused into a queue which at some point is pushed into main thread by event-loop. (Network operation)
+
+2. if the operation can't be off-loaded to O/S kernel, then libuv uses one of its 4 threads to execute it (any CPU-bound operation - I/O operation). libuv uses polling mechanism, to check whther the operation is over or not. if the operation is over, then corresponding callback is pused into a queue which at some point is pushed into main thread by event-loop.

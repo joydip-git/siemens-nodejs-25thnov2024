@@ -80,6 +80,10 @@ module tansformer plugin of babel:
 
 .babelrc => { "plugins":["@babel/plugin-transform-modules-commonjs"]}
 
+9. file handling 
+	a. fs module
+	b. readFile, writeFile, readFileSync and writeFileSynac, appendFile etc.
+
 
 
 
