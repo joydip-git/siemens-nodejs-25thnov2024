@@ -36,35 +36,21 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-//import { getData } from "./dbutility";
-var promises_1 = require("node:readline/promises");
-// (
-//     async () => {
-//         try {
-//             console.log(await getData());
-//         } catch (error) {
-//             console.log(error);
-//         }
-//     }
-// )()
-(function () { return __awaiter(void 0, void 0, void 0, function () {
-    var readWriteInterface, empName, empSalary, _a;
-    return __generator(this, function (_b) {
-        switch (_b.label) {
+exports.getData = void 0;
+var promises_1 = require("node:fs/promises");
+var getData = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var error_1;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
             case 0:
-                readWriteInterface = (0, promises_1.createInterface)(process.stdin, process.stdout);
-                return [4 /*yield*/, readWriteInterface
-                        .question('enter name: ')];
-            case 1:
-                empName = _b.sent();
-                _a = Number;
-                return [4 /*yield*/, readWriteInterface
-                        .question('enter salary: ')];
+                _a.trys.push([0, 2, , 3]);
+                return [4 /*yield*/, (0, promises_1.readFile)('./data/data.txt', { encoding: 'utf-8' })];
+            case 1: return [2 /*return*/, _a.sent()];
             case 2:
-                empSalary = _a.apply(void 0, [_b.sent()]);
-                console.log(empName, empSalary);
-                readWriteInterface.close();
-                return [2 /*return*/];
+                error_1 = _a.sent();
+                throw error_1;
+            case 3: return [2 /*return*/];
         }
     });
-}); })();
+}); };
+exports.getData = getData;

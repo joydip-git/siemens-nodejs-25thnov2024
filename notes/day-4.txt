@@ -13,3 +13,7 @@ local: >npm i typescript -D
 create a config file: tsconfig.json
 >.\node_modules\.bin\tsc --init [if tsc is installed locally]
 > tsc --init [if tsc is installed globally]
+
+
+If you are working with TS based node js app:
+>npm i @types/node -D
