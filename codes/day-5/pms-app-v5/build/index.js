@@ -35,10 +35,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var commander_1 = require("commander");
 var constants_1 = require("./utils/constants");
-var productcontroller_1 = require("./controllers/productcontroller");
+var productcontroller_1 = __importDefault(require("./controllers/productcontroller"));
 var promises_1 = require("node:readline/promises");
 commander_1.program
     .option('-f, --file <string>', 'path of the file', '')

@@ -5,9 +5,17 @@
         "rootDir": "src",
         "outDir": "build",
         "target": "ES5",
-        "module": "CommonJS"
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "lib": [
+            "ES2022"
+        ]
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "build"
     ]
 }
