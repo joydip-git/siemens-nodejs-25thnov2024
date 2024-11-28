@@ -43,3 +43,16 @@ Note: This package requires TCP/IP to connect to SQL Server, and you may need to
 
 for TS apps:
 extra package:>npm i @types/mssql -D
+
+table creation query:
+CREATE TABLE [dbo].[products]
+(
+    [productid] INT NOT NULL PRIMARY KEY IDENTITY(100, 1), 
+    [productname] VARCHAR(50) NOT NULL, 
+    [productcode] VARCHAR(10) NOT NULL, 
+    [description] VARCHAR(MAX) NULL, 
+    [releasedate] VARCHAR(50) NULL, 
+    [price] DECIMAL(18, 2) NOT NULL DEFAULT 0, 
+    [starrating] DECIMAL(5, 2) NOT NULL DEFAULT 0, 
+    [imagepath] VARCHAR(MAX) NULL
+)
