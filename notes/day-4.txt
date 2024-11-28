@@ -40,3 +40,6 @@ interacting witn SQL Server:
 -----------------------------------------
 package: >npm install mssql msnodesqlv8
 Note: This package requires TCP/IP to connect to SQL Server, and you may need to enable this in your installation.
+
+for TS apps:
+extra package:>npm i @types/mssql -D
