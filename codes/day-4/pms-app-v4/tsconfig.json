@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "rootDir": "src",
+        "outDir": "build",
+        "target": "ES5",
+        "module": "CommonJS"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,8 +1,8 @@
-//import { products } from "../repository/products";
 import { readData, writeData } from "../dao/filehandler";
+import Product from "../models/product";
 
 class ProductManager {
-    async getAll() {
+    async getAll(): Promise<Product[]> {
         try {
             const products = await readData()
             return products
@@ -11,7 +11,7 @@ class ProductManager {
         }
     }
 
-    async get(id) {
+    async get(id: number): Promise<Product> {
         try {
             const products = await readData()
             const found = products.find(p => p.productId === id)
@@ -24,7 +24,7 @@ class ProductManager {
         }
     }
 
-    async add(product) {
+    async add(product: Product): Promise<Product> {
         try {
             const products = await readData()
             const found = products.find(p => p.productId === product.productId)
@@ -41,7 +41,7 @@ class ProductManager {
         }
     }
 
-    async update(id, product) {
+    async update(id: number, product: Product): Promise<Product> {
         try {
             const products = await readData()
             const foundIndex = products.findIndex(p => p.productId === id)
@@ -59,12 +59,12 @@ class ProductManager {
         }
     }
 
-    async remove(id) {
+    async remove(id: number): Promise<Product> {
         try {
             const products = await readData()
             const foundIndex = products.findIndex(p => p.productId === id)
             if (foundIndex < 0)
-                throw new Error(`a product with same id (${product.productId}) does not exist..`)
+                throw new Error(`a product with same id (${id}) does not exist..`)
 
             var found = products[foundIndex]
             products.splice(foundIndex, 1)
@@ -73,7 +73,7 @@ class ProductManager {
             else
                 throw new Error('could not delete data')
         } catch (error) {
-            throw err
+            throw error
         }
     }
 }
