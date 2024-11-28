@@ -17,3 +17,20 @@ create a config file: tsconfig.json
 
 If you are working with TS based node js app:
 >npm i @types/node -D
+
+changing JS project to TS project:
+--------------------------------------------
+remove previous babel packages
+npm uninstall @babel/cli @babel/core @babel/preset-env @babel/plugin-transform-modules-commonjs
+
+delete .babelrc file
+
+install complete dependencies
+npm i comander yargs
+
+install dev dependencies
+npm i @types/node @types/yargs @types/commander typescript -D
+
+create tsconfig.json file
+
+change all files from JS to TS and update the code
