@@ -70,3 +70,12 @@ INSERT INTO [dbo].[products] ([productname], [productcode], [description], [rele
 INSERT INTO [dbo].[products] ([productname], [productcode], [description], [releasedate], [price], [starrating], [imagepath]) VALUES (N'Saw', N'TBX-0022', N'15-inch steel blade hand saw', N'May 15, 2016', CAST(150.00 AS Decimal(18, 2)), CAST(2.70 AS Decimal(5, 2)), N'http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png')
 
 INSERT INTO [dbo].[products] ([productname], [productcode], [description], [releasedate], [price], [starrating], [imagepath]) VALUES (N'Video Game Controller', N'GMG-0042', N'Standard two-button video game controller', N'October 15, 2015', CAST(450.85 AS Decimal(18, 2)), CAST(4.10 AS Decimal(5, 2)), N'http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png')
+
+
+my connection string:
+------------------------------
+with windows authentication
+server=joydip-pc\SQLEXPRESS,1433;Integrated Security=True; Encrypt=False; TrustServerCertificate=True;database=appdb;
+
+with mixed mode:
+server=localhost\SQLEXPRESS,1433;user id=sa;password=;Encrypt=False; TrustServerCertificate=True;database=appdb;
