@@ -20,7 +20,6 @@
 //     readWriteInterface.close()
 // }
 // acceptUserInput()
-Object.defineProperty(exports, "__esModule", { value: true });
 // const args = process.argv.slice(2)
 // console.log(args[0].split('=')[1]);
 /*
@@ -71,24 +70,30 @@ program
 
 program.parse();
 */
-var yargs_1 = require("yargs");
-var helpers_1 = require("yargs/helpers");
-(0, yargs_1.default)((0, helpers_1.hideBin)(process.argv))
-    .command('serve [port]', 'start the server', function (yargs) {
-    return yargs
-        .positional('port', {
-        describe: 'port to bind on',
-        default: 5000
-    });
-}, function (argv) {
-    if (argv.verbose) {
-        console.info("start server on :".concat(argv.port));
-        console.log(argv.port);
-    }
-})
-    .option('verbose', {
-    alias: 'v',
-    type: 'boolean',
-    description: 'Run with verbose logging'
-})
-    .parse();
+/*
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
+
+yargs(hideBin(process.argv))
+    .command('serve [port]', 'start the server',
+        (yargs) => {
+            return yargs
+                .positional(
+                    'port', {
+                    describe: 'port to bind on',
+                    default: 5000
+                })
+        }, (argv) => {
+            if (argv.verbose) {
+                console.info(`start server on :${argv.port}`)
+                console.log(argv.port)
+            }
+        })
+    .option(
+        'verbose', {
+        alias: 'v',
+        type: 'boolean',
+        description: 'Run with verbose logging'
+    })
+    .parse()
+*/
