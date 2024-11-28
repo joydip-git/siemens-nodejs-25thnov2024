@@ -56,3 +56,17 @@ CREATE TABLE [dbo].[products]
     [starrating] DECIMAL(5, 2) NOT NULL DEFAULT 0, 
     [imagepath] VARCHAR(MAX) NULL
 )
+
+
+insert records:
+------------------------------------
+
+INSERT INTO [dbo].[products] ([productname], [productcode], [description], [releasedate], [price], [starrating], [imagepath]) VALUES (N'Leaf Rake', N'GDN-0011', N'Leaf rake with 48-inch wooden handle.', N'March 19, 2016', CAST(19.95 AS Decimal(18, 2)), CAST(4.00 AS Decimal(5, 2)), N'http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png')
+
+INSERT INTO [dbo].[products] ([productname], [productcode], [description], [releasedate], [price], [starrating], [imagepath]) VALUES (N'Garden Cart', N'GDN-0023', N'15 gallon capacity rolling garden cart', N'March 18, 2019', CAST(100.00 AS Decimal(18, 2)), CAST(4.50 AS Decimal(5, 2)), N'http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png')
+
+INSERT INTO [dbo].[products] ([productname], [productcode], [description], [releasedate], [price], [starrating], [imagepath]) VALUES (N'Hammer', N'TBX-0048', N'Curved claw steel hammer', N'May 21, 2016', CAST(200.00 AS Decimal(18, 2)), CAST(3.50 AS Decimal(5, 2)), N'http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png')
+
+INSERT INTO [dbo].[products] ([productname], [productcode], [description], [releasedate], [price], [starrating], [imagepath]) VALUES (N'Saw', N'TBX-0022', N'15-inch steel blade hand saw', N'May 15, 2016', CAST(150.00 AS Decimal(18, 2)), CAST(2.70 AS Decimal(5, 2)), N'http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png')
+
+INSERT INTO [dbo].[products] ([productname], [productcode], [description], [releasedate], [price], [starrating], [imagepath]) VALUES (N'Video Game Controller', N'GMG-0042', N'Standard two-button video game controller', N'October 15, 2015', CAST(450.85 AS Decimal(18, 2)), CAST(4.10 AS Decimal(5, 2)), N'http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png')
