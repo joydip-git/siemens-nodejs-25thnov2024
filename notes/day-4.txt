@@ -1,0 +1,15 @@
+TypeScript:
+---------------
+1. static type checking
+2. strict data typing
+3. provides lots of extra fetaures which are not even supported by ES 
+note: those extra features will not be emitted when the code is transpiled
+4. this is a development mode language, can't be executed in JavaScript runtime (not or production)
+
+Transpiler => TypeScript compiler (tsc)
+global: >npm i typescript --location=global
+local: >npm i typescript -D
+
+create a config file: tsconfig.json
+>.\node_modules\.bin\tsc --init [if tsc is installed locally]
+> tsc --init [if tsc is installed globally]
