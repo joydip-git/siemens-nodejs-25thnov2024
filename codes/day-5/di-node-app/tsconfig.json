@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "build",
+        "target": "ESNext",
+        "module": "CommonJS",
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "types": [
+            "reflect-metadata"
+        ],
+        "lib": [
+            "ES2022",
+            "DOM"
+        ],
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "moduleResolution": "node"
+    },
+    "exclude": [
+        "node_modules",
+        "build"
+    ]
+}
