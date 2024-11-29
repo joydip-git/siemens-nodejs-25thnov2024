@@ -1,0 +1,1 @@
+{"version":3,"file":"responsegenerator.js","sourceRoot":"","sources":["../../src/utils/responsegenerator.ts"],"names":[],"mappings":";;;AAEO,MAAM,eAAe,GAAG,CAAI,OAAe,EAAE,IAAc,EAAE,UAAmB,EAAiB,EAAE;IACtG,OAAO;QACH,OAAO,EAAE,OAAO;QAChB,UAAU,EAAE,UAAU;QACtB,IAAI,EAAE,IAAI;KACb,CAAA;AACL,CAAC,CAAA;AANY,QAAA,eAAe,mBAM3B"}

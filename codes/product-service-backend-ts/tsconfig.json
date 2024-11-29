@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "rootDir": "src",
+        "outDir": "build",
+        "module": "CommonJS",
+        "lib": [
+            "ES2022",
+            "DOM"
+        ],
+        "types": [
+            "reflect-metadata"
+        ],
+        "sourceMap": true,
+        "moduleResolution": "Node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true
+    }
+}

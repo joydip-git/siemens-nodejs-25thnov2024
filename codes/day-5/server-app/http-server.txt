@@ -1,0 +1,28 @@
+import { createReadStream, readFileSync } from "fs";
+import { createServer, IncomingMessage, ServerResponse } from "http";
+import path from "path";
+
+const server = createServer(
+    (req: IncomingMessage, res: ServerResponse<IncomingMessage>) => {
+        res.writeHead(200, 'resource found', { 'Content-Type': 'text/html' })
+        //res.write('hello from server')
+        // console.log(req.url);
+        // res.write(JSON.stringify({ name: 'joydip' }))
+        // let page = readFileSync(path.resolve('./public/index.html'), { encoding: 'utf-8' })
+        // page = page.replace("{{name}}", "joydip")
+
+        const readableStream = createReadStream(path.resolve('./public/index.html'), { encoding: 'utf-8', autoClose: true, highWaterMark: 128 })
+        // readableStream.on('data', (chunk) => {
+        //     res.write(chunk)
+        // })
+        // readableStream.on('end', () => {
+        //     res.end()
+        // })
+        readableStream.pipe(res)
+        readableStream.on('end', () => {
+            res.end()
+        })
+
+    }
+)
+server.listen(3000, () => console.log('server is running. the url is: http://localhost:3000'))

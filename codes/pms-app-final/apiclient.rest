@@ -1,0 +1,43 @@
+###
+GET http://localhost:3001/products/all
+
+###
+POST http://localhost:3001/products/add
+Content-Type: application/json
+
+{
+      "productid": 0,
+      "productname": "test product",
+      "productcode": "test-0042",
+      "description": "test desc",
+      "releasedate": "October 15, 2015",
+      "price": 450,
+      "starrating": 4.1,
+      "imageurl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png" 
+}
+
+###
+PUT http://localhost:3001/products/update/106
+Content-Type: application/json
+
+{
+      "productid": 0,
+      "productname": "test product",
+      "productcode": "test-0042",
+      "description": "test desc",
+      "releasedate": "October 15, 2015",
+      "price": 500,
+      "starrating": 4.1,
+      "imageurl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png" 
+}
+
+###
+GET http://localhost:3001/products/106
+Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
+
+###
+DELETE  http://localhost:3001/products/delete/106
+
+###
+
+

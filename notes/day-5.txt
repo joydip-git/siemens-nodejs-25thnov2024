@@ -1,1 +1,29 @@
 inversify
+
+class ContainerBuilder {
+    private appcontainer: Container;
+    private static builder: ContainerBuilder;
+    private constructor() {
+        this.appcontainer = new Container()
+    }
+    static instantiate(): ContainerBuilder {
+        if (!this.builder) {
+            this.builder = new ContainerBuilder()
+        }
+        return this.builder
+    }
+    register<TInterface, TClass extends TInterface>(token: any) {
+
+        this.appcontainer.bind<TInterface>(token).to(TClass);
+        // appcontainer.bind<Operations>(SERVICE_TOKENS.OPERATIONS_SERVICE_TOKEN).to(Implementation)
+    }
+    createInstance<TInterface>(token: any) {
+        Reflect.getMetadata(token, TInterface)
+        Reflect.
+    }
+}
+
+
+http module in Node JS
+------------------------------
+server app 

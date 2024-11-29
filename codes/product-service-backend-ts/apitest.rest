@@ -1,0 +1,21 @@
+GET http://localhost:3003/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0Ijoiam95ZGlwQGdtYWlsLmNvbSIsImlhdCI6MTczMjg3OTgyNiwiZXhwIjoxNzMyODgwNDI2fQ.3KXjWRK96X4yhbSt1xjew6dhGqZW70ik8WetZW4IsY8
+
+###
+POST http://localhost:3003/auth/login
+Content-Type: application/json
+
+{
+    "username": "joydip@gmail.com",
+    "password": "Joydip@123"
+}
+
+###
+POST http://127.0.0.1:3003/auth/register
+Content-Type: application/json
+
+{
+    "username":"avc@gmail.com",
+    "password":"Joydip@123"
+}
+

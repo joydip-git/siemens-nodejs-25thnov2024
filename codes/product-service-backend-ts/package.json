@@ -1,0 +1,30 @@
+{
+  "name": "product-service-backend-ts",
+  "version": "1.0.0",
+  "description": "RESTful API node server for products",
+  "main": "productAPIserver.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "inversify": "^6.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "product-service-backend-ts": "file:",
+    "reflect-metadata": "^0.2.2"
+  },
+  "scripts": {
+    "start": "node ./build/server.js",
+    "build": "tsc -w",
+    "server": "ts-node ./src/server.ts"
+  },
+  "author": "joydip",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
